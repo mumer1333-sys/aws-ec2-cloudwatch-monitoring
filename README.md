@@ -1,14 +1,14 @@
 # aws-ec2-cloudwatch-monitoring
 
 ## What This Project Does
-Brief 2-3 sentence summary
+This project sets up a cloud monitoring pipeline on AWS from scratch. An EC2 instance runs as the server, with the CloudWatch Agent installed to collect and stream live CPU, memory, and disk metrics. A CloudWatch alarm monitors CPU usage and triggers when it crosses a set threshold — verified with a live stress test that spiked the CPU and flipped the alarm to "In Alarm" state. IAM roles control permissions throughout, following the principle of least privilege.
 
 ## Architecture
 Simple diagram or description of what connects to what
 EC2 → CloudWatch Agent → CloudWatch Metrics → Alarm → SNS
 
 ## Services Used
-- EC2 (t3.micro, Amazon Linux 2023)
+- EC2 (t3.micro, Amazon Linux)
 - IAM (role with CloudWatchAgentServerPolicy + AmazonSSMManagedInstanceCore)
 - CloudWatch Agent
 - CloudWatch Alarms
