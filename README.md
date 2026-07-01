@@ -27,8 +27,6 @@ EC2 → CloudWatch Agent → CloudWatch Metrics → Alarm → SNS
 - Private vs public IP confusion
 - SNS notification not attaching to alarm
 
-## Screenshots
-
 ## SAA Concepts Covered
 - EC2 instance types and families
 - IAM roles vs users
