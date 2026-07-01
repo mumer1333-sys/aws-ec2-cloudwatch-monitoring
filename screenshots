@@ -1,0 +1,7 @@
+## Screenshots
+
+### CloudWatch Metrics Dashboard
+![CloudWatch Metrics](screenshots/cloudwatch-metrics.png)
+
+### CPU Alarm Triggered
+![CPU Alarm](screenshots/cpu-alarm-triggered.png)
